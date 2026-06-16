@@ -1,67 +1,74 @@
 # Networking
 
 ## Keyword
+
 **Networking**
 
 ---
 
 ## Definition
 
-### English (Source 1 – Cisco)
-> "A computer network is a group of computers linked to each other that enables the computer to communicate with another computer and share their resources, data, and applications. Networking refers to the practice of connecting these computers and devices together to share information and resources."
+### English (Source 1 — Cisco)
+> "A computer network is a digital telecommunications network which allows nodes to share resources. In computer networks, computing devices exchange data with each other using connections between nodes."
 
-### English (Source 2 – CompTIA)
-> "Networking is the exchange of information and ideas among people with a common profession or special interest, usually in an informal social setting. In computing, networking refers to linking two or more devices so that they can share data and resources."
+### English (Source 2 — IBM)
+> "Networking, also known as computer networking, is the practice of transporting and exchanging data between nodes over a shared medium in an information system."
 
 ### Thai (สรุปในแบบของตัวเอง)
-Networking หรือ "เครือข่ายคอมพิวเตอร์" คือการเชื่อมต่ออุปกรณ์ต่าง ๆ เข้าหากัน เพื่อให้แชร์ข้อมูลและทรัพยากรได้ — พูดง่าย ๆ คือเหตุผลที่เราส่ง LINE หากันได้นั่นแหละ 📱
+
+Networking คือการเชื่อมต่ออุปกรณ์คอมพิวเตอร์หลายๆ เครื่องเข้าหากัน เพื่อให้สามารถแลกเปลี่ยนข้อมูลและแชร์ทรัพยากรร่วมกันได้ — เหมือนการสร้างถนนเชื่อมระหว่างเมือง ทำให้ข้อมูลวิ่งไปถึงกันได้อย่างรวดเร็ว 🌐
 
 ---
 
 ## Explanation (ขยายความ)
 
 ### Networking คืออะไร?
-Networking ในแง่ IT คือการเชื่อมต่อคอมพิวเตอร์และอุปกรณ์ต่าง ๆ เข้าด้วยกันผ่านสื่อกลาง เช่น สายเคเบิล หรือ Wi-Fi เพื่อให้สามารถสื่อสารและแลกเปลี่ยนข้อมูลกันได้
 
-### 🌐 ประเภทของเครือข่าย
+Networking เป็นพื้นฐานของระบบ IT ทุกอย่างในโลกปัจจุบัน ไม่ว่าจะเป็น Internet, การส่ง Email หรือการ Video Call ล้วนต้องพึ่งพา Networking ทั้งสิ้น
 
-| ประเภท | ความหมาย | ตัวอย่าง |
-|--------|---------|---------|
-| **LAN** | Local Area Network — เครือข่ายในพื้นที่แคบ | เครือข่ายในออฟฟิศ, บ้าน |
-| **WAN** | Wide Area Network — เครือข่ายพื้นที่กว้าง | อินเทอร์เน็ต |
-| **MAN** | Metropolitan Area Network — ระดับเมือง | เครือข่ายมหาวิทยาลัย |
-| **WLAN** | Wireless LAN | Wi-Fi ในบ้าน |
+### 🔌 ประเภทของ Network
 
-### 🔑 อุปกรณ์เครือข่ายที่ต้องรู้จัก
-- **Router** — กระจายสัญญาณอินเทอร์เน็ตและเชื่อมต่อเครือข่าย
-- **Switch** — เชื่อมต่ออุปกรณ์หลาย ๆ ตัวในเครือข่ายเดียวกัน
-- **Firewall** — ป้องกันการเข้าถึงที่ไม่ได้รับอนุญาต
-- **Access Point** — กระจายสัญญาณ Wi-Fi
+| ประเภท | ย่อมาจาก | ขอบเขต |
+|---|---|---|
+| **LAN** | Local Area Network | ภายในอาคาร / ออฟฟิศ |
+| **WAN** | Wide Area Network | ข้ามเมือง / ข้ามประเทศ |
+| **MAN** | Metropolitan Area Network | ภายในเมือง |
+| **PAN** | Personal Area Network | รอบตัวบุคคล (Bluetooth) |
 
-### 📡 Protocol สำคัญที่ใช้ในเครือข่าย
-- **TCP/IP** — โปรโตคอลหลักของอินเทอร์เน็ต
-- **HTTP/HTTPS** — ใช้ส่งข้อมูลเว็บไซต์
-- **DNS** — แปลงชื่อโดเมน (google.com) เป็น IP Address
-- **DHCP** — แจก IP Address อัตโนมัติ
+### 📡 Protocol สำคัญ
 
-### ความสำคัญในชีวิตประจำวัน
-ทุกการใช้งานอินเทอร์เน็ต ไม่ว่าจะเป็นการดู YouTube, ส่งอีเมล, หรือโทรวิดีโอ ล้วนต้องพึ่งพา Networking ทั้งสิ้น รวมถึงในองค์กรที่ต้องการระบบเครือข่ายที่มั่นคงและปลอดภัย
+| Protocol | หน้าที่ |
+|---|---|
+| **TCP/IP** | ส่งข้อมูลระหว่างอุปกรณ์บน Internet |
+| **HTTP/HTTPS** | รับส่งข้อมูลเว็บไซต์ |
+| **DNS** | แปลง Domain Name เป็น IP Address |
+| **DHCP** | แจก IP Address อัตโนมัติ |
 
-> "Networking is the backbone of the digital world. Without it, devices would be islands — powerful alone, but unable to share or communicate with the world around them."
+### 🌍 OSI Model 7 ชั้น
+
+1. **Physical** — สายสัญญาณ, คลื่นวิทยุ
+2. **Data Link** — MAC Address, Switch
+3. **Network** — IP Address, Router
+4. **Transport** — TCP, UDP
+5. **Session** — จัดการ Session การเชื่อมต่อ
+6. **Presentation** — เข้ารหัส / ถอดรหัสข้อมูล
+7. **Application** — HTTP, FTP, DNS
+
+> "Networking คือกระดูกสันหลังของโลกดิจิทัล ทุกอย่างตั้งแต่ Social Media ไปจนถึงระบบธนาคารออนไลน์ล้วนต้องพึ่งพาโครงสร้างพื้นฐานด้าน Networking ที่แข็งแกร่ง"
 > — *ChatGPT (OpenAI)*
 
-> "ระบบเครือข่ายคือโครงสร้างพื้นฐานที่ทำให้โลกดิจิทัลเดินหน้าต่อไปได้ ตั้งแต่การส่งข้อความง่าย ๆ ไปจนถึงการรันระบบคลาวด์ระดับองค์กร ล้วนต้องอาศัย Networking ทั้งนั้น"
+> "การเข้าใจ Networking เป็นทักษะพื้นฐานที่สำคัญสำหรับทุกคนในสายงาน IT เพราะไม่ว่าจะพัฒนา Software หรือดูแลระบบ ทุกอย่างล้วนทำงานบนโครงสร้าง Network ทั้งสิ้น"
 > — *Gemini (Google)*
 
 ---
 
 ## References
 
-1. Cisco – What is a Computer Network – [https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-computer-networking.html](https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-computer-networking.html)
-2. CompTIA – Networking Basics – [https://www.comptia.org/content/guides/what-is-computer-networking](https://www.comptia.org/content/guides/what-is-computer-networking)
-3. ChatGPT (OpenAI) – [https://chat.openai.com](https://chat.openai.com)
-4. Gemini (Google) – [https://gemini.google.com](https://gemini.google.com)
+1. Cisco — What is Computer Networking — <https://www.cisco.com/c/en/us/solutions/enterprise-networks/what-is-computer-networking.html>
+2. IBM — What is Networking — <https://www.ibm.com/topics/networking>
+3. ChatGPT (OpenAI) — <https://chat.openai.com>
+4. Gemini (Google) — <https://gemini.google.com>
 
 ---
 
-*[← Back to Profile](https://jitsupa2004.github.io)*
+*[← Back to Profile](https://sximi.github.io)*
